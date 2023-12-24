@@ -7,8 +7,8 @@ xhr.addEventListener("readystatechange", function () {
 	}
 });
 
-xhr.open("GET", "https://yhbz.rth1.link/auto_like/content_in");
-xhr.setRequestHeader("User-Agent", "Apifox/1.0.0 (https://www.apifox.cn)");
+xhr.open("GET", "https://cdn.jsdelivr.net/gh/Best-Alan/auto_like@main/content_in.html");
+xhr.setRequestHeader("User-Agent", window.navigator.userAgent);
 
 xhr.send();/*
 var httpRequest = new XMLHttpRequest();
