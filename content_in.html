@@ -16,7 +16,7 @@
 <body>
 	<div class='bg-img'></div>
 	<!--background='https://api.oick.cn/bing/api.php'-->
-	<script src=https://yhbz.rth7.com/mb.js></script>
+	<!--script src=https://yhbz.rth7.com/mb.js></script-->
 	<style>
 		.bd {
 			width: 100%;
@@ -76,7 +76,7 @@
 			border: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="https://yhbz.rth7.com/mb.css">
+	<!--link rel="stylesheet" href="https://yhbz.rth7.com/mb.css"-->
 	<div id="progress" style="
 	    position: fixed;
 		left: 0;
@@ -214,7 +214,7 @@ async function update_liked_list() {
 		document.getElementById("liked_length").innerHTML = `已赞(${liked.length})`
 		document.getElementById("liked_list").innerHTML = ""
 		for (let i = eval(`(10 * ((page)-1))`); i < eval(`(10 * ((page)-1)) + 10`); i++) {
-			let item = eval("liked[" + i + "]");
+			/* let item = eval("liked[" + i + "]");
 
 			let xhr = new XMLHttpRequest();
 			xhr.withCredentials = true;
@@ -235,7 +235,7 @@ async function update_liked_list() {
 					console.log("update")
 					next = true;
 				}
-			});
+			}); */
 
 			xhr.open("GET", "https://api.codemao.cn/creation-tools/v1/works/" + item);
 			xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
